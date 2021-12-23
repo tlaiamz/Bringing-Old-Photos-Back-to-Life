@@ -375,7 +375,7 @@ if __name__ == "__main__":
         faces = face_detector(image)
         done = time.time()
 
-        if len(faces) == 0:
+        if not faces:
             print("Warning: There is no face in %s" % (x))
             continue
 
